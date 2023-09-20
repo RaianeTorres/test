@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    app.get ("/", (req,res)=>){
+        res.render ("index");
+       )};
+       
+       app.get ("produto", (req, res)
+=>{ res.redner("produto");
+       )};
+
+       app.post ("/salvarproduto", (req, res) => {
+        var titulo= req.body.titulo;
+        var descricao = req.body.descricao;
+        res.send ("form recebido! titulo: " + titulo + "descrição:"+ descricao);
+       })
+</body>
+</html>
